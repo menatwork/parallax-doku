@@ -99,6 +99,9 @@ Einfache Startup-Anleitung
 * Um die Animation zum Leben zu erwecken setzen Sie die folgenden Parameter in Ihrem CSS Stylesheet
 
 
+Code examples
+--------------------------
+
 **CSS**
 
 ```css
@@ -152,8 +155,7 @@ Einfache Startup-Anleitung
 * The animation for the article is now active and you are able to see it in the frontend
 
 
-Extend $.ParallaxBuilder
-------------------------
+**Extend $.ParallaxBuilder**
 
 With this little example, you can access the special callbacks and you can specify new helper functions which are choosable in the backend
 
