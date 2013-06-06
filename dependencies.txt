@@ -1,0 +1,29 @@
+ /*
+  * jquery-cookie 1.2
+  * https://github.com/carhartl/jquery-cookie/
+  */
+
+ /*
+  * jQuery mobile 1.3.0
+  * http://jquerymobile.com/
+  */
+
+ /*
+  * jQuery
+  * http://jquery.com/
+  */
+
+ /*
+  * jquery-mousewheel 3.0.6
+  * https://github.com/brandonaaron/jquery-mousewheel/
+  */
+
+ /*
+  * jtop.ext.tween.js
+  * http://code.google.com/p/mydesk/source/browse/trunk/mydesk/public/application/script/libraries/desktop/extensions/jtop.ext.tween.js?r=558
+  */
+
+ /*
+  * MultiColumnWizard
+  * https://contao.org/de/extension-list/view/MultiColumnWizard.de.html
+  */
