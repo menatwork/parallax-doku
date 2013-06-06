@@ -20,6 +20,7 @@ Installation & Configuration
 * Unpack the archive on your server
 * Open the installation directory in your web browser
 * Update the database
+* Clean the field URL suffix in the contao settings
 * Set the configurations in the parallax menu entry
 
 
@@ -49,18 +50,18 @@ Simple startup guide
 * To bring the animation to life set the following CSS parameter in your stylesheet
 
 
-Parallax für Contao - Deutsch
+Parallax fï¿½r Contao - Deutsch
 =============================
 
-Über
+ï¿½ber
 ----
 
-Die Parallaxe Erweiterung bietet die Möglichkeit, Artikeln und Content Elementen Animationen hinzufügen.
+Die Parallaxe Erweiterung bietet die Mï¿½glichkeit, Artikeln und Content Elementen Animationen hinzufï¿½gen.
 
 Systemvoraussetzungen
 ---------------------
 
-* Contao 2.9.x oder höher
+* Contao 2.9.x oder hï¿½her
 * jQuery
 
 
@@ -68,9 +69,10 @@ Installation & Konfiguration
 ----------------------------
 
 * Entpacken Sie das Archiv auf Ihrem Server
-* Öffnen Sie das Installationsverzeichnis in Ihrem Web-Browser
+* ï¿½ffnen Sie das Installationsverzeichnis in Ihrem Web-Browser
 * Aktualisieren Sie die Datenbank
-* Setzen Sie die Konfiguration im Parallaxe Menüeintrag
+* Reinigen Sie das Feld URL-Suffix in den Contao-Einstellungen
+* Setzen Sie die Konfiguration im Parallaxe Menï¿½eintrag
 
 
 Inserttags
@@ -88,14 +90,14 @@ Einfache Startup-Anleitung
 
 * Installieren der Erweiterung auf Ihrer Contao-Installation
 * Erstellen Sie Ihr Standard-Theme und Layout
-* Aktivieren Sie "jQuery" im Layout (die beste möglichkeit dies zu machen ist theme_plus_jquery)
-* Fügen Sie eine Seite zum Seitenbaum hinzu
-* Fügen Sie so viele Artikel unter Ihre Seite wie Sie Animieren möchten
-* Fügen Sie ein paar Content-Elemente unter Ihre Artikel
-* Gehen Sie in den Parallax Menüeintrag
-* Fügen Sie ein neues Element ein, wählen Sie Ihren Root-Seite und setzen Sie "Scrollbar aktivieren"
-* Fügen Sie ein weiteres Element hinzu und wählen Sie Ihre normale Seite unter "Animationsseite" aus
-* Fügen Sie nun die beinhaltenden Artikel auf dieser Seite hinzu. Später können Sie mit der Dauer spielen, setzten Sie für den Anfang den Wert auf 500
+* Aktivieren Sie "jQuery" im Layout (die beste mï¿½glichkeit dies zu machen ist theme_plus_jquery)
+* Fï¿½gen Sie eine Seite zum Seitenbaum hinzu
+* Fï¿½gen Sie so viele Artikel unter Ihre Seite wie Sie Animieren mï¿½chten
+* Fï¿½gen Sie ein paar Content-Elemente unter Ihre Artikel
+* Gehen Sie in den Parallax Menï¿½eintrag
+* Fï¿½gen Sie ein neues Element ein, wï¿½hlen Sie Ihren Root-Seite und setzen Sie "Scrollbar aktivieren"
+* Fï¿½gen Sie ein weiteres Element hinzu und wï¿½hlen Sie Ihre normale Seite unter "Animationsseite" aus
+* Fï¿½gen Sie nun die beinhaltenden Artikel auf dieser Seite hinzu. Spï¿½ter kï¿½nnen Sie mit der Dauer spielen, setzten Sie fï¿½r den Anfang den Wert auf 500
 * Um die Animation zum Leben zu erwecken setzen Sie die folgenden Parameter in Ihrem CSS Stylesheet
 
 
