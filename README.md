@@ -56,7 +56,7 @@ Parallax für Contao - Deutsch
 Über
 ----
 
-Die Parallaxe Erweiterung bietet die Möglichkeit, Artikeln und Content Elementen Animationen hinzufügen.
+Die Parallax Erweiterung bietet die Möglichkeit, Artikeln und Content Elementen Animationen hinzuzufügen.
 
 Systemvoraussetzungen
 ---------------------
@@ -69,10 +69,10 @@ Installation & Konfiguration
 ----------------------------
 
 * Entpacken Sie das Archiv auf Ihrem Server
-* öffnen Sie das Installationsverzeichnis in Ihrem Web-Browser
+* Öffnen Sie das Installationsverzeichnis in Ihrem Web-Browser
 * Aktualisieren Sie die Datenbank
 * Reinigen Sie das Feld URL-Suffix in den Contao-Einstellungen
-* Setzen Sie die Konfiguration im Parallaxe Menüeintrag
+* Setzen Sie die Konfiguration im Parallax Menüeintrag
 
 
 Inserttags
@@ -90,14 +90,14 @@ Einfache Startup-Anleitung
 
 * Installieren der Erweiterung auf Ihrer Contao-Installation
 * Erstellen Sie Ihr Standard-Theme und Layout
-* Aktivieren Sie "jQuery" im Layout (die beste möglichkeit dies zu machen ist theme_plus_jquery)
+* Aktivieren Sie "jQuery" im Layout (die beste möglichkeit dies zu tun ist theme_plus_jquery)
 * Fügen Sie eine Seite zum Seitenbaum hinzu
-* Fügen Sie so viele Artikel unter Ihre Seite wie Sie Animieren möchten
+* Fügen Sie so viele Artikel unter Ihre Seite, wie Sie Animieren möchten
 * Fügen Sie ein paar Content-Elemente unter Ihre Artikel
 * Gehen Sie in den Parallax Menüeintrag
 * Fügen Sie ein neues Element ein, wählen Sie Ihren Root-Seite und setzen Sie "Scrollbar aktivieren"
 * Fügen Sie ein weiteres Element hinzu und wählen Sie Ihre normale Seite unter "Animationsseite" aus
-* Fügen Sie nun die beinhaltenden Artikel auf dieser Seite hinzu. Später können Sie mit der Dauer spielen, setzten Sie für den Anfang den Wert auf 500
+* Fügen Sie nun die beinhaltenden Artikel auf dieser Seite hinzu. Später können Sie mit der Dauer spielen, setzen Sie für den Anfang den Wert auf 500
 * Um die Animation zum Leben zu erwecken setzen Sie die folgenden Parameter in Ihrem CSS Stylesheet
 
 
