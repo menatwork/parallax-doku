@@ -47,7 +47,7 @@ Simple startup guide
 * Add a new element, choose your root page and set "Activate scrollbar"
 * Add another element and choose your regular page under "Animation Page"
 * Now add the containing articles in this page. Later you can play with the duration but for the first time set the value to 500
-* To bring the animation to life set the following CSS parameter in your stylesheet
+* The animation for the article is now active and you are able to see it in the frontend
 
 
 Parallax für Contao - Deutsch
@@ -98,64 +98,10 @@ Einfache Startup-Anleitung
 * Fügen Sie ein neues Element ein, wählen Sie Ihren Root-Seite und setzen Sie "Scrollbar aktivieren"
 * Fügen Sie ein weiteres Element hinzu und wählen Sie Ihre normale Seite unter "Animationsseite" aus
 * Fügen Sie nun die beinhaltenden Artikel auf dieser Seite hinzu. Später können Sie mit der Dauer spielen, setzen Sie für den Anfang den Wert auf 500
-* Um die Animation zum Leben zu erwecken setzen Sie die folgenden Parameter in Ihrem CSS Stylesheet
-
+* Die Animation für den Artikel ist nun aktiv und Sie es sich nun im Frontend anschauen
 
 Code examples
 =============
-
-**CSS**
-
-```css
-@media screen, projection {
-
-  /**
-   * Default parallax
-   */
-
-  html.parallax {overflow-y:hidden;}
-
-  html.parallax, .parallax body {height:100%;}
-
-  .parallax #wrapper {height:100%;}
-
-  .parallax #container {
-    height:100%;
-    width:100%;
-    position:absolute;
-  }
-
-  /* This value is variable and can be set explicit for each article */
-  .parallax .mod_article {height:1000px;} 
-
-  /**
-   * Scrollbar
-   */
-
-  .parallax #scrollBar {
-    background-color:lightgrey;
-    display:none;
-    position:fixed;
-    right:0;
-    top:0;
-    width:16px;
-    z-index:1000;
-  }
-
-  .parallax .thumb {
-    background-color:black;
-    height:37px;
-    left:0;
-    position:absolute;
-    top:0;
-    width:100%;
-  }
-
-}
-```
-
-* The animation for the article is now active and you are able to see it in the frontend
-
 
 **Extend $.ParallaxBuilder**
 
