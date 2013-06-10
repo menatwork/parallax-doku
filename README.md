@@ -11,7 +11,7 @@ System requirements
 -------------------
 
 * Contao 2.9.x or higher
-* jQuery
+* jQuery 1.7.2 or higher
 
 
 Installation & Configuration
@@ -62,7 +62,7 @@ Systemvoraussetzungen
 ---------------------
 
 * Contao 2.9.x oder höher
-* jQuery
+* jQuery 1.7.2 oder höher
 
 
 Installation & Konfiguration
