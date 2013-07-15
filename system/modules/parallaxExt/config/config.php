@@ -30,10 +30,10 @@ if (TL_MODE == 'FE')
 {
     if (version_compare(VERSION, 3, '>='))
     {
-        $GLOBALS['TL_JQUERY'][] = '<script src="system/modules/parallaxExt/html/js/parallaxExt.js"></script>';
+        $GLOBALS['TL_JQUERY'][] = '<script src="' . TL_ASSETS_URL . 'system/modules/parallaxExt/html/js/parallaxExt.js"></script>';
     }
     else
     {
-        $GLOBALS['TL_MOOTOOLS'][] = '<script src="system/modules/parallaxExt/html/js/parallaxExt.js"></script>';
+        $GLOBALS['TL_MOOTOOLS'][] = '<script src="' . TL_SCRIPT_URL . 'system/modules/parallaxExt/html/js/parallaxExt.js"></script>';
     }
 }
