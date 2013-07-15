@@ -28,5 +28,12 @@ $GLOBALS['Parallax']['jsFunctions'] = array_merge(
  */
 if (TL_MODE == 'FE')
 {
-    $GLOBALS['TL_MOOTOOLS'][] = '<script src="system/modules/parallaxExt/html/js/parallaxExt.js"></script>';
+    if (version_compare(VERSION, 3, '>='))
+    {
+        $GLOBALS['TL_JQUERY'][] = '<script src="system/modules/parallaxExt/html/js/parallaxExt.js"></script>';
+    }
+    else
+    {
+        $GLOBALS['TL_MOOTOOLS'][] = '<script src="system/modules/parallaxExt/html/js/parallaxExt.js"></script>';
+    }
 }
