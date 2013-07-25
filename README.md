@@ -100,6 +100,13 @@ Einfache Startup-Anleitung
 * Fügen Sie nun die beinhaltenden Artikel auf dieser Seite hinzu. Später können Sie mit der Dauer spielen, setzen Sie für den Anfang den Wert auf 500
 * Die Animation für den Artikel ist nun aktiv und Sie es sich nun im Frontend anschauen
 
+
+Screenshots
+=============
+
+[Current screenshots!](https://github.com/menatwork/parallax-doku/wiki/Screenshots)
+
+
 Code examples
 =============
 
