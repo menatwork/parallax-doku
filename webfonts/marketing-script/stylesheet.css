@@ -1,0 +1,10 @@
+@font-face {
+    font-family:'marketing_scriptregular';
+    src:url('marketingscript-webfont.eot');
+    src:url('marketingscript-webfont.eot?#iefix') format('embedded-opentype'),
+        url('marketingscript-webfont.woff') format('woff'),
+        url('marketingscript-webfont.ttf') format('truetype'),
+        url('marketingscript-webfont.svg#marketing_scriptregular') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
