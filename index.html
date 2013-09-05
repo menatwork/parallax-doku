@@ -3,39 +3,163 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Parallax - The ultimate parallax script for Contao</title>
+    <title>Parallax Documentation</title>
     <link rel="stylesheet" href="stylesheets/normalize.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <meta name="msapplication-TileImage" content="images/win-8.png" />
+    <meta name="msapplication-TileColor" content="#96d2f0" />
+    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-precomposed.png" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico" />
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/favicon.ico" />
+    <!--
+
+      Copyright © 2013 by MEN AT WORK
+      Visit our agency website at http://www.men-at-work.de for more information
+
+   //-->
   </head>
   <body>
     <div id="wrapper">
       <div id="container">
         <aside>
           <h1>Parallax</h1>
-          <p>Documentation and examples</p>
+          <ul id="nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#requirements">System requirements</a></li>
+            <li><a href="#startup">Simple startup guide</a></li>
+            <li><a href="#markup">Required HTML Markup</a></li>
+            <!-- <li><a href="#events">Events</a></li>
+            <li><a href="#callbacks">Callbacks</a></li> -->
+            <li><a href="#examples">Example custom animation</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+            <li><a href="#screenshots">Screenshots</a></li>
+          </ul>
           <ul>
-            <li>hallo</li>
+            <li><span>English version</span></li>
+            <li><a href="index-de.html">Deutsche Version</a></li>
           </ul>
         </aside>
         <section>
-          <h2>lorem ipsum</h2>
+          <h2 id="about">About</h2>
+          <p>Parallax is based on jQuery and works just as you are used to it by Contao. Clear, slim, and easy to understand. At the beginning we support a great variety of browsers and operating systems.</p> <p>You will need some experience with HTML(5) and CSS(3), but no knowledge of javascript or jQuery. Parallax for Contao is slim in structure, but powerful in function. With an easy usability it gives your ideas and creativity a lot of room.</p>
+
+          <p class="button"><a href="http://www.contao-parallax.com/">Project website</a></p>
+
+          <h2 id="requirements">System requirements</h2>
+          <ul>
+            <li>Contao 2.9.x or higher</li>
+            <li>jQuery 1.7.2 or higher</li>
+          </ul>
+
+          <h2 id="startup">Simple startup guide</h2>
+          <ol>
+            <li>Install the extension</li>
+            <li>Create your default theme and layout</li>
+            <li>Enable "jQuery" in the layout</li>
+            <li>Add pages to pagetree</li>
+            <li>Add articles to page as many as you like to animate</li>
+            <li>Add a few content elements under your articles</li>
+            <li>Go to the parallax menu entry</li>
+            <li>Add a new element, choose your root page and set "Activate scrollbar"</li>
+            <li>Add another element and choose your regular page under "Animation page"</li>
+            <li>Now add the containing articles in this page. Later you can play with the duration but for the first time set the value to 500</li>
+            <li>The animation for the article is now active</li>
+            <li>Animated elements should be positioned with "position:absolute". "position:relative" should only be used in exceptional cases.</li>
+          </ol>
+
+          <h2 id="markup">Required HTML Markup</h2>
+
+          <p>The parallax extension needs a defined set of elements, id's and classes in order to work properly. It is important that contao has the possibillity to dynamically generate id's and classes, so do not change these parts of the articles and content elements.</p>
+
+          <script src="https://gist.github.com/menatwork-dev/6439516.js"></script>
+
+          <!-- <h2 id="events">Events</h2>
+          <h2 id="callbacks">Callbacks</h2> -->
+          <h2 id="examples">Example custom animation</h2>
+
+          <script src="https://gist.github.com/menatwork-dev/6439508.js"></script>
+
+          <h2 id="changelog">Changelog</h2>
+
+          <h3>1.2.0</h3>
+          <ul>
+            <li>Full Contao 3.1 support</li>
+            <li>Remove dependencies for external jquery extensions for Contao 3</li>
+            <li>Bugfix for broken scrollbar if last article has a dynamic height</li>
+            <li>Add user restriction in the relation between parallax and contao elements</li>
+            <li>Remove info text and add wizard for editing related contao elements from parallax elements</li>
+            <li>Add full fixed header support with new calculations, jump markers and more</li>
+            <li>Split the configuration javascript into different modules for better performance, more flexibility and as preparation of the lite and pro version</li>
+            <li>Remove Navigation, horizontal slides and resolution support for lite version</li>
+            <li>Add repository for pro modules with full parallax support like "parallaxHorizontal", "parallaxImagePicker", "parallaxNavigation" and "parallaxResolution"</li>
+            <li>Contao minifyHtml support for javascript configuration array</li>
+            <li>Bugfix to remove id from copied parallax content elements</li>
+            <li>Many little bugfixes and dca optimizations</li>
+          </ul>
+
+          <h3>1.1.0</h3>
+          <ul>
+            <li>Adjustment for Contao 3.0</li>
+            <li>Remove choosable template for navigation</li>
+            <li>Bugfix for wrong height calculated - dynamic article with padding and box-sizing:border-box</li>
+          </ul>
+
+          <h3>1.0.1</h3>
+          <ul>
+            <li>Optimizations for keyboard controls</li>
+            <li>Add parallax stylesheet with all necessary frontend styles</li>
+            <li>Add possibility to enable or disable loading gif</li>
+            <li>Remove parallax class from body tag</li>
+            <li>Removing scrollbar if parallax is abort</li>
+            <li>Bugfixing keydown events in lower then IE8</li>
+          </ul>
+
+          <h2 id="screenshots">Screenshots</h2>
+
+          <h3>Parallax - Page tree</h3>
+          <img src="screenshots/parallax-tree.png" alt="" />
+
+          <h3>Parallax - Root site configuration</h3>
+          <img src="screenshots/parallax-root-site-configuration.png" alt="" />
+
+          <h3>Parallax - Page configuration</h3>
+          <img src="screenshots/parallax-page-configuration.png" alt="" />
+
+          <h3>Parallax - Article configuration</h3>
+          <img src="screenshots/parallax-article-configuration.png" alt="" />
+
+          <h3>Parallax - Content element configuration</h3>
+          <img src="screenshots/parallax-content-element-configuration.png" alt="" />
+
+          <h3>Article configuration</h3>
+          <img src="screenshots/article-configuration.png" alt="" />
         </section>
       </div>
     </div>
-    <script type="text/javascript">
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-43710069-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+        var target = this.hash,
+        $target = $(target);
+        $('html, body').animate({scrollTop: $target.offset().top - 30 }, 'slow');
+      });
+    });
+    </script>
+    <script>
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script>
+      try {
+        var pageTracker = _gat._getTracker("UA-43710069-1");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
   </body>
 </html>

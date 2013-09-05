@@ -1,6 +1,10 @@
 @import url(../webfonts/aller/stylesheet.css);
 @import url(../webfonts/marketing-script/stylesheet.css);
 
+html {
+  overflow-y:scroll;
+}
+
 body {
   font:0.875em/1.5 allerregular, "Helvetica Neue", Helvetica, Arial, sans-serif;
   background:transparent url(../images/bgr-body.gif) fixed center top;
@@ -13,7 +17,6 @@ body {
   -webkit-box-sizing:border-box;
   box-sizing:border-box;
 }
-
 
 h1, h2, h3, h4, h5, h6 {
   color:#313131;
@@ -36,7 +39,7 @@ h1 {
   padding: 10px 0 10px 115px;
   color:#fff;
   font-weight:100;
-  margin:0 0 50px;
+  margin:0 0 25px;
 }
 
 h1 + p {
@@ -46,15 +49,37 @@ h1 + p {
   color:#fff; */
 }
 
+h2 {
+  margin-top:40px;
+  font-size:1.7em;
+}
+
+h2:first-child {
+  margin-top:0;
+}
+
+h3 {
+  font-size:1.2em;
+}
+
 a {
   color:#313131;
   text-decoration:none;
 }
 
-code, pre {
+.gist {
+  margin-top:20px;
+}
+
+code, pre, table {
   font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
   color:#333;
   font-size:12px;
+}
+
+table {
+  width:100%;
+  margin:0;
 }
 
 pre {
@@ -67,12 +92,11 @@ pre {
 
 img {
   max-width:100%;
-  width:auto;
-  height:auto;
+  vertical-align:middle;
 }
 
-#wrapper {
-  padding:50px;
+img + h3 {
+  margin-top:30px;
 }
 
 #container {
@@ -83,31 +107,134 @@ img {
 
 section {
   width:680px;
+  margin-top:50px;
   float:right;
   padding-top:15px;
+  padding-bottom:50px;
+}
+
+section .button a {
+  display:inline-block;
+  padding:8px 26px;
+  background: #95d1f0;
+  background: -moz-linear-gradient(top, #95d1f0 0%, #64bbe5 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#95d1f0), color-stop(100%,#64bbe5));
+  background: -webkit-linear-gradient(top, #95d1f0 0%,#64bbe5 100%);
+  background: -o-linear-gradient(top, #95d1f0 0%,#64bbe5 100%);
+  background: -ms-linear-gradient(top, #95d1f0 0%,#64bbe5 100%);
+  background: linear-gradient(to bottom, #95d1f0 0%,#64bbe5 100%);
+  display:inline-block;
+  position:relative;
+  text-shadow:1px 1px 0px #66bde8;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border:1px solid #64bbe5;
+  -webkit-box-shadow: 0px 6px 0px 0px #4d98bc;
+  box-shadow: 0px 6px 0px 0px #4d98bc;
+  text-align:center;
+  color:#fff;
+  font-size:1.429em;
+  font-family:'marketing_scriptregular', serif;
+}
+
+section .button a:hover,
+section .button a:focus {
+  -webkit-box-shadow: 0px 2px 0px 0px #4d98bc;
+  box-shadow: 0px 2px 0px 0px #4d98bc;
+  top:4px;
 }
 
 aside {
   position:fixed;
   width:250px;
+  margin-top:50px;
   text-shadow: 1px 1px 0 #65ACCF;
   color:#fff;
 }
 
-@media print, screen and (max-width: 960px) {}
+aside ul {
+  padding:0;
+  list-style:none;
+}
 
-@media print, screen and (max-width: 720px) {
+aside li {
+  padding:2px 0;
+}
 
-  body {
-    word-wrap:break-word;
-  }
-  
-  pre, code {
-    word-wrap:normal;
-  }
+aside a {
+  color:#fff;
+}
+
+aside a:hover, 
+aside span {
+  color:#313131;
+  text-shadow:none;
+}
+
+@media print, screen and (max-width: 66.563em) {
+
+body {
+  background-image:none;
+}
+
+#container {
+  width:100%;
+}
+
+section {
+  float:none;
+  width:100%;
+  padding:0px 50px 50px;
+  margin-top:25px;
+}
+
+aside {
+  position:static;
+  width:100%;
+  margin-top:0;
+  padding:25px 50px;
+  background-color:#96d2f0;
+}
+
+aside ul {
+  margin:0;
+}
+
+aside ul + ul {
+  margin-top:20px;
+}
 
 }
 
-@media print, screen and (max-width: 480px) {}
+@media print, screen and (max-width: 45em) {
 
-@media print {}
+body {
+  word-wrap:break-word;
+}
+  
+pre, code {
+  word-wrap:normal;
+}
+
+h1 {
+  padding:50px 10px 0;
+  display:table;
+  background-position:center top;
+  margin:0 auto 25px;
+}
+
+section, aside {
+  padding-left:25px;
+  padding-right:25px;
+}
+
+}
+
+
+@media print {
+
+aside ul {
+  display:none;
+}
+
+}
