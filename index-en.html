@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Parallax Documentation</title>
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="msapplication-TileImage" content="images/win-8.png" />
+    <meta name="msapplication-TileColor" content="#96d2f0" />
+    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-precomposed.png" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico" />
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/favicon.ico" />
+    <!--
+
+      Copyright © 2013 by MEN AT WORK
+      Visit our agency website at http://www.men-at-work.de for more information
+
+   //-->
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="container">
+        <aside>
+          <h1>Parallax</h1>
+          <ul id="nav">
+            <li><a href="#about">About Parallax</a></li>
+            <li><a href="#requirements">System requirements</a></li>
+            <li><a href="#startup">Simple startup guide</a></li>
+            <li><a href="#markup">Required HTML Markup</a></li>
+            <!-- <li><a href="#events">Events</a></li>
+            <li><a href="#callbacks">Callbacks</a></li> -->
+            <li><a href="#examples">Example custom animation</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+            <li><a href="#screenshots">Screenshots</a></li>
+          </ul>
+          <ul>
+            <li><a href="index.html">Deutsche Version</a></li>
+            <li><span>English version</span></li>
+          </ul>
+        </aside>
+        <section>
+          <h2 id="about">About Parallax</h2>
+          <p>Parallax is based on jQuery and works just as you are used to it by Contao. Clear, slim, and easy to understand. At the beginning we support a great variety of browsers and operating systems.</p> <p>You will need some experience with HTML(5) and CSS(3), but no knowledge of Javascript or jQuery. Parallax for Contao is slim in structure, but powerful in function. With an easy usability it gives your ideas and creativity a lot of room.</p>
+
+          <p class="button"><a href="http://www.contao-parallax.com/">Project website</a></p>
+
+          <h2 id="requirements">System requirements</h2>
+          <p>Parallax for Contao requires some extensions or libraries, please install them always over the contao extension repository.</p>
+          <ul>
+            <li>Contao 2.9.x or higher</li>
+            <li>jQuery 1.7.2 or higher (already included in Contao 3)</li>
+            <li><a target="_blank" href="https://contao.org/en/extension-list/view/MultiColumnWizard.html">MultiColumnWizard 3.2.0</li>
+          </ul>
+
+          <h2 id="startup">Simple startup guide</h2>
+          <ol>
+            <li>Install the extension</li>
+            <li>Create your default theme and layout</li>
+            <li>Enable "jQuery" in the layout</li>
+            <li>Add pages to pagetree</li>
+            <li>Add articles to page as many as you like to animate</li>
+            <li>Add a few content elements under your articles</li>
+            <li>Go to the parallax menu entry</li>
+            <li>Add a new element, choose your root page and set "Activate scrollbar"</li>
+            <li>Add another element and choose your regular page under "Animation page"</li>
+            <li>Now add the containing articles in this page. Later you can play with the duration but for the first time set the value to 500</li>
+            <li>The animation for the article is now active</li>
+            <li>Animated elements should be positioned with "position:absolute". "position:relative" should only be used in exceptional cases.</li>
+          </ol>
+
+          <h3>Hint</h3>
+          <p>The Parallax extension requires a certain URL constellation:</p>
+          <ul>
+            <li>No prefix in the URL (.html)</li>
+            <li>No alias "index" on the first page</li>
+            <li>No forwarding to the "index" page</li>
+          </ul>
+
+          <h2 id="markup">Required HTML Markup</h2>
+
+          <p>The parallax extension needs a defined set of elements, id's and classes in order to work properly. It is important that contao has the possibillity to dynamically generate id's and classes, so do not change these parts of the articles and content elements.</p>
+
+          <script src="https://gist.github.com/menatwork-dev/6439516.js"></script>
+
+          <!-- <h2 id="events">Events</h2>
+          <h2 id="callbacks">Callbacks</h2> -->
+          <h2 id="examples">Example custom animation</h2>
+
+          <script src="https://gist.github.com/menatwork-dev/6439508.js"></script>
+
+          <h2 id="changelog">Changelog</h2>
+
+          <h3>parallax</h3>
+
+          <h4>1.3.1</h4>
+          <ul>
+            <li>Minor optimization for a better integration of the pro version</li>
+            <li>Bugfix for Internet Explorer 8</li>
+          </ul>
+
+          <h3>1.3.0</h3>
+          <ul>
+            <li>Better integration in Contao 3</li>
+            <li>Optimized javascript performance</li>
+            <li>Bugfix of wrong calculations in javascript</li>
+            <li>Introduction of a new CSS class for content elements and articles <a href="https://github.com/menatwork/parallax-doku/issues/5">#5</a></li>
+            <li>Bugfix for Apple Safari and Magic Mouse <a href="https://github.com/menatwork/parallax-doku/issues/9">#9</a></li>
+            <li>Integration of Help Wizards for a better understanding of the animations</li>
+            <li>General optimisation of articles with a dynamic height</li>
+            <li>Bugfix of the xhtml templates</li>
+            <li>Optimization of the height calculation in the combination of a horizontal slide and the last article</li>
+            <li>Bugfix of the bouncing scrollbar</li>
+            <li>Two new animations for positioning elements outside the viewport</li>
+            <li>Implementation of new helper function for programmers to trigger the recalculation of the elements</li>
+            <li>Reimplementation of the calculation of the last article in combination with a fixed header</li>
+            <li>Optimization of the calculation for the maximum parallax resolution</li>
+            <li>Minor bugfixes</li>
+          </ul>
+
+          <h3>1.2.0</h3>
+          <ul>
+            <li>Full Contao 3.1 support</li>
+            <li>Remove dependencies for external jquery extensions for Contao 3</li>
+            <li>Bugfix for broken scrollbar if last article has a dynamic height</li>
+            <li>Add user restriction in the relation between parallax and contao elements</li>
+            <li>Remove info text and add wizard for editing related contao elements from parallax elements</li>
+            <li>Add full fixed header support with new calculations, jump markers and more</li>
+            <li>Split the configuration javascript into different modules for better performance, more flexibility and as preparation of the lite and pro version</li>
+            <li>Remove Navigation, horizontal slides and resolution support for lite version</li>
+            <li>Contao minifyHtml support for javascript configuration array</li>
+            <li>Bugfix to remove id from copied parallax content elements</li>
+            <li>Many little bugfixes and dca optimizations</li>
+          </ul>
+
+          <h3>1.1.0</h3>
+          <ul>
+            <li>Adjustment for Contao 3.0</li>
+            <li>Remove choosable template for navigation</li>
+            <li>Bugfix for wrong height calculated - dynamic article with padding and box-sizing:border-box</li>
+          </ul>
+
+          <h3>1.0.1</h3>
+          <ul>
+            <li>Optimizations for keyboard controls</li>
+            <li>Add parallax stylesheet with all necessary frontend styles</li>
+            <li>Add possibility to enable or disable loading gif</li>
+            <li>Remove parallax class from body tag</li>
+            <li>Removing scrollbar if parallax is abort</li>
+            <li>Bugfixing keydown events in lower then IE8</li>
+          </ul>
+
+          <h3>parallax-deps (Pro version)</h3>
+
+          <h4>1.1.1</h4>
+          <ul>
+            <li>Moved all classes of of the "parallaxImagePicker" from the DCA files to an own helper class to avoid error in Contao 3.1.4</li>
+            <li>Optimization of the backend widgets for picking the background images</li>
+            <li>Bugfix of the the inheritance of the paths for background images</li>
+            <li>Bugfix of the class inheritance in the navigation classes</li>
+          </ul>
+
+          <h4>1.1.0</h4>
+          <ul>
+            <li>Better integration in Contao 3</li>
+            <li>Optimized javascript performance</li>
+            <li>Bugfix of wrong calculations in javascript</li>
+            <li>Reimplementation of the calculation of the last article in combination with a fixed header</li>
+            <li>Implementation of new helper function for programmers to trigger the recalculation of the elements</li>
+            <li>Minor bugfixes</li>
+          </ul>
+
+          <h4>1.0.0</h4>
+          <ul>
+            <li>Full Contao 3.1 support</li>
+            <li>Add full fixed header support with new calculations, jump markers and more</li>
+            <li>Split the configuration javascript into different modules for better performance, more flexibility and as preparation of the lite and pro version</li>
+            <li>Remove Navigation, horizontal slides and resolution support for lite version</li>
+            <li>Add repository for pro modules with full parallax support like "parallaxHorizontal", "parallaxImagePicker", "parallaxNavigation" and "parallaxResolution"</li>
+            <li>Contao minifyHtml support for javascript configuration array</li>
+            <li>Many little bugfixes and dca optimizations</li>
+          </ul>
+
+          <h2 id="screenshots">Screenshots</h2>
+
+          <h3>Parallax - Page tree</h3>
+          <img src="screenshots/parallax-tree.png" alt="" />
+
+          <h3>Parallax - Root site configuration</h3>
+          <img src="screenshots/parallax-root-site-configuration.png" alt="" />
+
+          <h3>Parallax - Page configuration</h3>
+          <img src="screenshots/parallax-page-configuration.png" alt="" />
+
+          <h3>Parallax - Article configuration</h3>
+          <img src="screenshots/parallax-article-configuration.png" alt="" />
+
+          <h3>Parallax - Content element configuration</h3>
+          <img src="screenshots/parallax-content-element-configuration.png" alt="" />
+
+          <h3>Article configuration</h3>
+          <img src="screenshots/article-configuration.png" alt="" />
+        </section>
+      </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+        var target = this.hash,
+        $target = $(target);
+        $('html, body').animate({scrollTop: $target.offset().top - 30 }, 'slow');
+      });
+    });
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-43710069-1', 'mywebsite.com');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
