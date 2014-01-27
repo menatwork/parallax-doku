@@ -6,5 +6,3 @@ Parallax for Contao
 * [Set of animations](https://github.com/menatwork/parallax-animations)
 * [Contao extension repository](https://contao.org/en/extension-list/view/parallax.html)
 * [Ticket system](https://github.com/menatwork/parallax-doku/issues)
-
-![Parallax tree](http://i.imagebanana.com/img/y4xb6smj/parallaxtree.png)
